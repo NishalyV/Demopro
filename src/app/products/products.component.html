@@ -1,0 +1,11 @@
+<br>
+<div class="container">
+    <h3 style="float: left;">Product List</h3> 
+    <div class="date" style="float: right;"><input type="date" id="birthday" name="birthday"></div>
+    <br><br><br>
+    <ul class="list-group" *ngIf="datas">
+        <li class="list-group-item" *ngFor="let data of datas">
+            {{data.p_name}}  Rs.{{data.p_cost}}
+        </li>
+    </ul>
+</div>
